@@ -1,0 +1,44 @@
+# ---------- Операционная система ----------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---------- Редакторы / IDE ----------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# ---------- Node / инструменты ----------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# ---------- Рабочие и временные файлы ----------
+# служебная папка с диагностическими скриптами и скриншотами
+_work/
+*.log
+*.tmp
+tmp/
+temp/
+.cache/
+
+# ---------- Сборка / выгрузка ----------
+dist/
+build/
+
+# ---------- Служебные папки ----------
+references/
+.claude/

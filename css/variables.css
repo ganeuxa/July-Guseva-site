@@ -1,0 +1,55 @@
+:root {
+  --color-surface: #faf7f3;
+  --color-beige: #f4ece0;
+  --color-beige-deep: #f0dfd4;
+  --color-dark: #26221f;
+  --color-white: #ffffff;
+
+  --color-accent: #8a3b2e;
+  --color-accent-hover: #6e2f24;
+  --color-accent-soft: rgba(138, 59, 46, 0.1);
+  --color-accent-light: #d98a70;
+
+  --color-text: #1a1a1a;
+  --color-text-70: rgba(26, 26, 26, 0.7);
+  --color-text-65: rgba(26, 26, 26, 0.65);
+  --color-text-55: rgba(26, 26, 26, 0.55);
+  --color-border: rgba(26, 26, 26, 0.14);
+  --color-border-soft: rgba(26, 26, 26, 0.12);
+
+  --color-on-dark: #f6f5f2;
+  --color-on-dark-70: rgba(246, 245, 242, 0.7);
+  --color-on-dark-55: rgba(246, 245, 242, 0.55);
+  --color-on-dark-border: rgba(246, 245, 242, 0.2);
+
+  --font-serif: 'Spectral', Georgia, 'Times New Roman', serif;
+
+  --font-accent: 'Spectral Oblique', 'Spectral', Georgia, serif;
+  --font-sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Consolas, monospace;
+
+  --fs-h1: clamp(2rem, 1.1rem + 4vw, 3.875rem);
+  --fs-h2: clamp(1.625rem, 1.1rem + 2.3vw, 2.625rem);
+  --fs-h2-sm: clamp(1.5rem, 1.1rem + 1.8vw, 2.5rem);
+  --fs-h3: clamp(1.25rem, 1rem + 1vw, 1.4375rem);
+  --fs-eyebrow: clamp(1rem, 0.9rem + 0.4vw, 1.25rem);
+  --fs-lead: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+  --fs-body: 0.9375rem;
+  --fs-small: 0.8125rem;
+
+  --container-max: 1440px;
+  --container-padding: clamp(1.25rem, 0.5rem + 3.5vw, 4rem);
+  --section-spacing: clamp(3rem, 1.8rem + 5vw, 5.75rem);
+
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 26px;
+  --radius-photo: 22px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 3px 8px rgba(26, 26, 26, 0.05), 0 16px 36px rgba(26, 26, 26, 0.07);
+  --shadow-card-sm: 0 3px 8px rgba(26, 26, 26, 0.05), 0 12px 28px rgba(26, 26, 26, 0.06);
+
+  --header-height: 88px;
+  --transition: 0.2s ease;
+}
