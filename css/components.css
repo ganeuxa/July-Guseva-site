@@ -170,6 +170,8 @@
 
 .brand__text {
   min-width: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .brand__name {
@@ -177,6 +179,7 @@
   font-weight: 600;
   font-size: 1.0625rem;
   line-height: 1.2;
+  display: block;
 }
 
 .brand__tagline {
@@ -186,15 +189,21 @@
   font-size: 0.8125rem;
   color: var(--color-accent);
   line-height: 1.25;
+  display: block;
 }
 
 .primary-nav {
-  display: contents;
+  display: flex;
+  align-items: center;
+  gap: clamp(24px, 3vw, 48px);
+  margin-left: auto;
 }
 
 .site-nav {
   display: flex;
+  align-items: center;
   gap: clamp(20px, 2.5vw, 36px);
+  white-space: nowrap;
 }
 
 .site-nav a {
@@ -212,6 +221,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0;
 }
 
 .nav-toggle {
@@ -239,4 +249,19 @@
   flex-wrap: wrap;
   gap: 14px;
   align-items: center;
+}
+
+.icon-link__svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-link__svg--max {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-link__svg--telegram {
+  transform: translateX(-2px);
 }

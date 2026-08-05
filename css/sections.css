@@ -530,7 +530,7 @@
   color: var(--color-accent);
 }
 
-.review-card p {
+.review-card p:not(.review-card__mark) {
   font-size: var(--fs-body);
   line-height: 1.7;
   color: var(--color-text-70);
@@ -747,3 +747,4 @@
 .site-footer a:hover {
   color: var(--color-on-dark);
 }
+
