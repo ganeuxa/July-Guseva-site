@@ -1,6 +1,15 @@
 DirectoryIndex index.html
 Options -Indexes
 
+# Canonical redirect: always use https://kadryblog.ru
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https [OR]
+  RewriteCond %{HTTP_HOST} ^www\.kadryblog\.ru$ [NC]
+  RewriteRule ^ https://kadryblog.ru%{REQUEST_URI} [R=301,L]
+</IfModule>
+
 <IfModule mod_headers.c>
   Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'sha256-tJb2+sEC9OIqojvtC56dvuCRMYKgbpU3hrcwJX4SrCc='; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; frame-src 'none'; frame-ancestors 'none'; form-action 'none'; upgrade-insecure-requests"
   Header always set X-Content-Type-Options "nosniff"
