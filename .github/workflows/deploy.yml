@@ -1,0 +1,24 @@
+name: Deploy to Beget
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy files to Beget
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.BEGET_HOST }}
+          username: ${{ secrets.BEGET_USER }}
+          key: ${{ secrets.BEGET_SSH_KEY }}
+          source: "."
+          target: "~/dizusslp.beget.tech/public_html"
+          rm: false
