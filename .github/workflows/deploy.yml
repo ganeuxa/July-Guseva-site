@@ -21,4 +21,4 @@ jobs:
           key: ${{ secrets.BEGET_SSH_KEY }}
           source: "."
           target: "~/dizusslp.beget.tech/public_html"
-          rm: false
+          rm: true
